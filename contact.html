@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зворотній зв'язок — Nexora Labs</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+  <a href="index.html" class="brand-link">
+    <img src="images/logo.png" alt="Логотип Nexora Labs" class="logo">
+    <h1>Nexora Labs</h1>
+  </a>
+  </header>
+
+  <nav class="site-nav">
+    <a href="pro.html">Проєкти</a>
+    <a href="index.html#reviews-section">Відгуки про нас</a>
+    <a href="contact.html">Зворотній зв'язок</a>
+  </nav>
+
+  <main id="top">
+
+    <section class="page-intro">
+      <h2>Зворотній зв'язок</h2>
+      <p>Розкажіть нам, що вас цікавить — ми відповідаємо протягом одного робочого дня.</p>
+    </section>
+
+    <section class="contact-form-section">
+      <form id="feedback-form" novalidate>
+
+        <fieldset>
+          <legend>Персональна інформація</legend>
+
+          <div class="form-row">
+            <label for="fullname">Прізвище та ім'я</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </div>
+
+          <div class="form-row">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-row">
+            <label for="age">Вік</label>
+            <input type="number" id="age" name="age" min="14" max="100">
+          </div>
+
+          <div class="form-row">
+            <span class="form-row__label">Освіта</span>
+            <div class="radio-group">
+              <label><input type="radio" name="education" value="full" checked> Повна</label>
+              <label><input type="radio" name="education" value="incomplete"> Неповна</label>
+              <label><input type="radio" name="education" value="higher"> Вища</label>
+              <label><input type="radio" name="education" value="professional"> Професійна</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <span class="form-row__label">Інтереси</span>
+            <div class="checkbox-group">
+              <label><input type="checkbox" name="interests" value="scientist"> Науковець</label>
+              <label><input type="checkbox" name="interests" value="investor"> Інвестор</label>
+              <label><input type="checkbox" name="interests" value="promoter"> Промоутер</label>
+              <label><input type="checkbox" name="interests" value="official"> Держслужбовець</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="purpose">Мета зворотнього зв'язку</label>
+          <select id="purpose" name="purpose">
+            <option value="cooperation" selected>Співпраця</option>
+            <option value="rights-complaint">Скарга на порушення права власності</option>
+            <option value="proposal">Пропозиція</option>
+            <option value="bug">Наявність помилки</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <label for="details">Детально</label>
+          <textarea
+            id="details"
+            name="details"
+            rows="6"
+            cols="50"
+            maxlength="500"
+            placeholder="Опишіть ваше питання докладніше (до 500 символів)"></textarea>
+        </div>
+
+        <div class="form-row form-row--checkbox">
+          <label>
+            <input type="checkbox" name="consent" required>
+            Я погоджуюсь на обробку моїх персональних даних
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn--solid">Надіслати</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contact-section" class="site-footer">
+    <p>© 2026 Nexora Labs. Усі права захищено.</p>
+  </footer>
+
+  <script>
+  document.getElementById('feedback-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+  });
+  </script>
+  
+</body>
+</html>
