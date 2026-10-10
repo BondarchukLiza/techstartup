@@ -5,6 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Зворотній зв'язок — Nexora Labs</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+  #feedback-form > .btn {
+    margin-top: 10px;
+  }
+
+  .contact-form-section fieldset:first-child {
+    border-left: 3px solid #56cfe1;
+  }
+</style>
 </head>
 <body>
 
@@ -112,8 +121,10 @@
   <script>
   document.getElementById('feedback-form').addEventListener('submit', function (e) {
     e.preventDefault();
+    e.target.reset();
+    alert('Дякуємо за ваш зворотній зв’язок! Ми зв’яжемося з вами найближчим часом.');
   });
   </script>
-  
+
 </body>
 </html>

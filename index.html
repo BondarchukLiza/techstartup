@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nexora Labs — інструменти автоматизації для розробників</title>
   <link rel="stylesheet" href="css/style.css">
+  <style>
+  #reviews-section > h2 {
+    text-align: center;
+    letter-spacing: 1px;
+  }
+
+  .hero__title::before {
+    content: "> ";
+    color: #56cfe1;
+  }
+</style>
 </head>
 <body>
 
@@ -55,7 +66,7 @@
 
     <section id="founders-section" class="founders">
       <h2>Про засновників</h2>
-      <table>
+      <table tabindex="0">
         <caption>Засновники Nexora Labs</caption>
         <thead>
           <tr>
@@ -120,18 +131,30 @@
       <div class="reviews-list">
 
         <blockquote class="review">
-          <p>Nexora Labs скоротили наш час деплою з двох годин до семи хвилин. AutoPipe просто працює — команда про нього забула, і це найкращий комплімент.</p>
-          Максим Руденко, Head of Engineering, Fintra
+          <p>
+            Nexora Labs скоротили наш час деплою з двох годин до семи хвилин. AutoPipe просто працює — команда про нього забула, і це найкращий комплімент.
+          </p>
+          <footer class="review__author">
+            Максим Руденко, Head of Engineering, Fintra
+          </footer>
         </blockquote>
 
         <blockquote class="review">
-          <p>DeployWatch виявив проблему з розгортанням ще до того, як про неї дізналися клієнти. Автоматичний відкат врятував нам ніч перед релізом.</p>
-          Наталія Сорока, CTO, Warehouse24
+          <p>
+              DeployWatch виявив проблему з розгортанням ще до того, як про неї дізналися клієнти. Автоматичний відкат врятував нам ніч перед релізом.
+          </p>
+          <footer class="review__author">
+              Наталія Сорока, CTO, Warehouse24
+          </footer>
         </blockquote>
 
         <blockquote class="review">
-          <p>Найкраще, що ми зробили для якості коду за останній рік — це підключили LintGuard. Кількість багів у продакшні впала вдвічі.</p>
-          Олег Панченко, Lead Developer, Brightloop
+          <p>
+              Найкраще, що ми зробили для якості коду за останній рік — це підключили LintGuard. Кількість багів у продакшні впала вдвічі.
+          </p>
+          <footer class="review__author">
+              Олег Панченко, Lead Developer, Brightloop
+          </footer>
         </blockquote>
 
       </div>
