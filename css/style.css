@@ -419,7 +419,7 @@ body:has(.projects-list) main {
     grid-template-columns:
         repeat(auto-fit, minmax(300px, 1fr));
 
-    gap: 30px;
+    gap: 10rem;
 
     margin: 40px 0;
 }
